@@ -13,7 +13,7 @@ lang: de-DE
 [//]: #   \usepackage[T1,T2A]{fontenc} <--- To use cyrilic
 
 # Run pandoc on save
-To run this pandoc on save, run this command in the cli
+To run pandoc on save, run this command in the cli
 ```bash
 ag -l | entr -s \
 "pandoc --slide-level 1 --lua-filter dotfilter.lua \
@@ -21,18 +21,13 @@ ag -l | entr -s \
 ```
 
 # Text
-```md
 **bold text**
-```
-```md
+
 *italic text*
-```
-```md
+
 ~~strike-thru~~
-```
 
 # Code
-
 ```{.csharp .numberLines}
 class Program
     {
@@ -125,7 +120,6 @@ As (@good) illustrates, ...
 
 # Table
 : Sample grid table.
-
 +---------------+---------------+--------------------+
 | Fruit         | Price         | Advantages         |
 +===============+===============+====================+
@@ -139,7 +133,7 @@ As (@good) illustrates, ...
 # Graph
 ```{#graphviz .dot .process }
 digraph dfd2{
-  label="graphvic";
+  label="graphviz";
   node[shape=record]
   subgraph level0{
   enti1 [style=filled fillcolor=orange label="Customer" shape=box];
